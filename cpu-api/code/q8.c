@@ -27,7 +27,7 @@ int main() {
     exit(1);
   } else if (rc == 0) {
     int y;
-    read(fd[0], &y, 4);
+    read(fd[0], &y, sizeof(y));
     printf("Fork 2 read: %d\n", y);
   } 
   return 0;
